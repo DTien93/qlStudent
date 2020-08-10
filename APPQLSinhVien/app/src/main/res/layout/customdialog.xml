@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EF9004"
+    android:layout_height="match_parent"
+    tools:context=".DangNhap"
+    android:orientation="vertical">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="ĐĂNG KÝ"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edttk"
+        android:hint="Tài khoản"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/edmk"
+        android:textStyle="bold"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="30dp"
+            android:text="Hủy"
+            android:id="@+id/buttonhuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="30dp"
+            android:text="Đồng ý"
+            android:id="@+id/butondongy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

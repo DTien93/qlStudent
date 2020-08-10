@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#EF9004"
+    tools:context=".DangNhap">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"/>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtaikhoan"
+        android:hint="Tên đăng nhập"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtmatkhau"
+        android:textStyle="bold"
+        android:hint="Mật khẩu"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="30dp"
+            android:text="Đăng nhập"
+            android:id="@+id/buttondangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="30dp"
+            android:text="Đăng ký"
+            android:id="@+id/buttondangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/buttonexit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Thoát" />
+    </LinearLayout>
+</LinearLayout>
